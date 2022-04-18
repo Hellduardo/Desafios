@@ -68,6 +68,12 @@ form input{
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
+}
+
+form input:focus{
+    border: 1px solid #1877f2;
 }
 
 .right__loginBtn{
@@ -125,4 +131,54 @@ form input{
     font-family: 'Arial';
 }
 
+@media(max-width:950px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width: 400px;
+        align-content: center;
+    }
+    .left p{
+        height: 75px;
+        font-size: 24px;
+    }
 
+}
+
+@media(max-width:500px){
+    form{
+        width: 350px;
+        align-items: center;
+        align-content: center;
+    }
+    .left{
+        height: 10px;
+    }   
+}
+
+@media(max-width:300px) {
+    .left img{
+        display: flex;
+        justify-content: center;
+    }
+    .left{
+        margin-bottom: -300px;
+    }
+    form{
+        margin-left: 30px;
+        align-content: center;
+        align-items: center;
+    }
+    .left p, .right p{
+        display: none;
+        align-content: center;
+        align-items: center;
+    }
+    form input, .right__forget, .right__loginBtn, .right__sign-upBtn{
+        font-size: 12px;
+        align-content: center;
+        align-items: center;
+    }
+
+}
